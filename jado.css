@@ -268,3 +268,447 @@ h1 {
         padding: 10px 20px;
     }
 }
+
+/* ============================================ */
+/* SERVICES SECTION - Professional Design       */
+/* ============================================ */
+
+.services-section {
+    padding: 80px 0 60px 0;
+    background: linear-gradient(135deg, #FFFFFF 0%, #FEFAF5 100%);
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section Header Styles */
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.category-badge {
+    color: #5e5a58;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.section-title {
+    font-size: 42px;
+    font-weight: 700;
+    font-family: 'Merriweather', sans-serif;
+    color: #1E1D4C;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+/* Services Grid - 4 cards in a row */
+.services-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Individual Service Card */
+.service-card {
+    /*background: white;*/
+    border-radius: 36px;
+    padding: 40px 25px 45px 25px;
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    /*box-shadow: 0 20px 35px -15px rgba(0, 0, 0, 0.05);*/
+}
+
+.service-card-s{
+    background: white;
+    border-radius: 36px;
+    padding: 40px 25px 45px 25px;
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 20px 35px -15px rgba(0, 0, 0, 0.05);
+
+}
+
+/* Hover effect - card lifts up */
+.service-card:hover,
+.service-card-s:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 35px 50px -20px rgba(255, 123, 58, 0.25);
+}
+
+/* Card Icons */
+.card-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.card-icon i {
+    font-size: 42px;
+}
+
+/* Individual Icon Colors */
+.weather-icon {
+    background: linear-gradient(135deg, #FFF3E0, #FFE4C4);
+    background-position: 40px 40px;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+}
+.weather-icon i {
+    color: #FF7B3A;
+}
+
+.flights-icon {
+    background: linear-gradient(15deg, #FFF3E0, #FFE4C4);
+    background-position: left 40px bottom 40px;
+    background-size: 60px 100px;
+    background-repeat: no-repeat;
+}
+.flights-icon i {
+    color: #3B82F6;
+}
+
+/*----------------------*/
+.service-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 200px;
+}
+
+.service-card-s{
+    background: white;
+    border-radius: 36px;
+    padding: 40px 25px 45px 25px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 20px 35px -15px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+/* Orange shape - ALAG se card ke neechay */
+.orange-shape {
+    width: 70px;
+    height: 70px;
+    background: #d94b04cc;
+    border-radius: 20px 0px 20px 0px;
+    margin-top: -50px;  /* Card ke thoda upar */
+    margin-left: -22px;  /* Left side mein */
+    align-self: flex-start;  /* Left mein align */
+}
+/*---------------------*/
+.events-icon {
+    background: linear-gradient(15deg, #FFF3E0, #FFE4C4);
+    background-position: left 40px bottom 40px;
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+}
+.events-icon i {
+    color: #464549;
+}
+
+.customization-icon {
+    background: linear-gradient(135deg, #DCFCE7, #BBF7D0);
+    background: linear-gradient(135deg, #FFF3E0, #FFE4C4);
+    background-position: 40px 40px;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+}
+.customization-icon i {
+    color: #878a88;
+}
+
+/* Card Title */
+.card-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1E1D4C;
+    margin-bottom: 15px;
+}
+
+/* Card Description */
+.card-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #5E6282;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Responsive Design for Tablets & Phones */
+@media (max-width: 1024px) {
+    .services-grid {
+        gap: 20px;
+    }
+    
+    .section-title {
+        font-size: 36px;
+    }
+    
+    .service-card {
+        min-width: 180px;
+        padding: 30px 15px 35px 15px;
+    }
+}
+
+@media (max-width: 850px) {
+    .services-grid {
+        justify-content: center;
+    }
+    
+    .service-card {
+        width: calc(50% - 20px);
+        min-width: 240px;
+    }
+}
+
+@media (max-width: 600px) {
+    .services-section {
+        padding: 50px 0 40px 0;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .service-card {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    .card-icon {
+        width: 65px;
+        height: 65px;
+    }
+    
+    .card-icon i {
+        font-size: 32px;
+    }
+    
+    .card-title {
+        font-size: 18px;
+    }
+}
+
+/* --------------------- */
+/* ============================================ */
+/* DESTINATIONS SECTION - Top Selling           */
+/* ============================================ */
+
+.destinations-section {
+    padding: 80px 0 100px 0;
+    background: linear-gradient(135deg, #FEFAF5 0%, #FFFFFF 100%);
+    position: relative;
+}
+
+.destinations-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section Header Styles */
+.destinations-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.top-selling-badge {
+    color: #8b8581;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    /* text-transform: uppercase; */
+    display: block;
+    margin-bottom: 12px;
+}
+
+.destinations-title {
+    font-size: 42px;
+    font-weight: 700;
+    font-family: 'Merriweather', sans-serif;
+    color: #1E1D4C;
+    margin: 0;
+}
+
+/* Destinations Grid - 3 cards in a row */
+.destinations-grid {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+/* Individual Destination Card */
+.destination-card {
+    background: white;
+    border-radius: 28px;
+    overflow: hidden;
+    width: 320px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Hover effect - card lifts and grows shadow */
+.destination-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 30px 45px -15px rgba(255, 123, 58, 0.25);
+}
+
+/* Card Image Container */
+.card-image {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object-position: 50% 0%; */
+    transition: transform 0.5s ease;
+}
+
+/* Zoom image on hover */
+.destination-card:hover .card-image img {
+    transform: scale(1.02);
+}
+
+/* Card Info Section */
+.card-info {
+    padding: 20px 20px 25px 20px;
+}
+
+/* Location and Price row */
+.location-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.location {
+    font-size: 14px;
+    font-weight: 500;
+    color: #5E6282;
+    margin: 0;
+}
+
+.price {
+    font-size: 14px;
+    font-weight: 500;
+    color: #5E6282;
+}
+
+/* Trip Duration */
+.trip-duration {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #5E6282;
+    font-size: 12px;
+    font-weight: 550;
+}
+
+.trip-duration i {
+    color: #1a1818;
+    font-size: 17px;
+    /* font-weight: 400; */
+}
+
+/* Decorative elements (optional) */
+.destinations-section::before {
+    position: absolute;
+    font-size: 60px;
+    opacity: 0.03;
+    bottom: 20px;
+    left: 20px;
+    pointer-events: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .destinations-title {
+        font-size: 36px;
+    }
+    
+    .destination-card {
+        width: 280px;
+    }
+    
+    .card-image {
+        height: 250px;
+    }
+}
+
+@media (max-width: 900px) {
+    .destinations-grid {
+        gap: 25px;
+    }
+    
+    .destination-card {
+        width: 260px;
+    }
+}
+
+@media (max-width: 768px) {
+    .destinations-section {
+        padding: 50px 0 60px 0;
+    }
+    
+    .destinations-title {
+        font-size: 32px;
+    }
+    
+    .destinations-grid {
+        justify-content: center;
+    }
+    
+    .destination-card {
+        width: 280px;
+    }
+}
+
+@media (max-width: 600px) {
+    .destinations-header {
+        margin-bottom: 40px;
+    }
+    
+    .destinations-title {
+        font-size: 28px;
+    }
+    
+    .destination-card {
+        width: 100%;
+        max-width: 320px;
+    }
+    
+    .card-image {
+        height: 220px;
+    }
+}
