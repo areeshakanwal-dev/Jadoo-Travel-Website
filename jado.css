@@ -213,8 +213,8 @@ h1 {
 
 .traveler-img {
     max-width: 100%;
-    width: 400px;
-    animation: float 3s ease-in-out infinite;
+    width: 700px;
+    /* animation: float 3s ease-in-out infinite; */
 }
 
 /* Animation to make image float */
@@ -319,20 +319,8 @@ h1 {
 }
 
 /* Individual Service Card */
-.service-card {
-    /*background: white;*/
-    border-radius: 36px;
-    padding: 40px 25px 45px 25px;
-    text-align: center;
-    flex: 1;
-    min-width: 200px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    position: relative;
-    /*box-shadow: 0 20px 35px -15px rgba(0, 0, 0, 0.05);*/
-}
 
-.service-card-s{
+.service-card{
     background: white;
     border-radius: 36px;
     padding: 40px 25px 45px 25px;
@@ -347,11 +335,14 @@ h1 {
 }
 
 /* Hover effect - card lifts up */
-.service-card:hover,
-.service-card-s:hover {
+.service-card:hover {
     transform: translateY(-15px);
     box-shadow: 0 35px 50px -20px rgba(255, 123, 58, 0.25);
 }
+/* .card:hover .orange-shape {
+    opacity: 1;
+    transform: scale(1);
+} */
 
 /* Card Icons */
 .card-icon {
@@ -366,29 +357,17 @@ h1 {
 }
 
 .card-icon i {
-    font-size: 42px;
+    font-size: 900px;
 }
-
-/* Individual Icon Colors */
-.weather-icon {
-    background: linear-gradient(135deg, #FFF3E0, #FFE4C4);
-    background-position: 40px 40px;
-    background-size: 100px 100px;
-    background-repeat: no-repeat;
-}
-.weather-icon i {
-    color: #FF7B3A;
-}
-
 .flights-icon {
-    background: linear-gradient(15deg, #FFF3E0, #FFE4C4);
-    background-position: left 40px bottom 40px;
-    background-size: 60px 100px;
-    background-repeat: no-repeat;
+    width: 50%;
+    display: flex; /* Add this */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0 auto; /* Center the container itself */
 }
-.flights-icon i {
-    color: #3B82F6;
-}
+
+
 
 /*----------------------*/
 .service-card-wrapper {
@@ -399,7 +378,7 @@ h1 {
     min-width: 200px;
 }
 
-.service-card-s{
+.service-card{
     background: white;
     border-radius: 36px;
     padding: 40px 25px 45px 25px;
@@ -418,29 +397,10 @@ h1 {
     margin-top: -50px;  /* Card ke thoda upar */
     margin-left: -22px;  /* Left side mein */
     align-self: flex-start;  /* Left mein align */
+    display: none;
 }
+
 /*---------------------*/
-.events-icon {
-    background: linear-gradient(15deg, #FFF3E0, #FFE4C4);
-    background-position: left 40px bottom 40px;
-    background-size: 80px 80px;
-    background-repeat: no-repeat;
-}
-.events-icon i {
-    color: #464549;
-}
-
-.customization-icon {
-    background: linear-gradient(135deg, #DCFCE7, #BBF7D0);
-    background: linear-gradient(135deg, #FFF3E0, #FFE4C4);
-    background-position: 40px 40px;
-    background-size: 100px 100px;
-    background-repeat: no-repeat;
-}
-.customization-icon i {
-    color: #878a88;
-}
-
 /* Card Title */
 .card-title {
     font-size: 15px;
