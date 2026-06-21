@@ -1170,3 +1170,194 @@ h1 {
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(21, 20, 20, 0.3);
 }
+/* ============================================ */
+/* SUBSCRIBE SECTION - Newsletter               */
+/* ============================================ */
+
+.subscribe-section {
+    padding: 80px 20px; 
+    background: #FFFFFF;
+    display: flex;          
+    justify-content: center;
+    align-items: center;     
+}
+
+.subscribe-container {
+    max-width: 800px;
+    margin: 0 auto;
+     width: 100%;            
+    display: flex;          
+    justify-content: center;
+}
+
+.subscribe-content {
+    text-align: center;
+    background: linear-gradient(135deg, #f0e5f7 10%);
+    border-radius: 60px;
+    margin-top: 140px;
+    /* margin-left: 0px; */
+    max-width: 900px;
+    width: 100%;
+    padding: 70px ;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    position: relative; 
+    overflow: hidden;
+}
+
+/* Decorative elements */
+.subscribe-content::before {
+    content: "✈️";
+    position: absolute;
+    font-size: 80px;
+    opacity: 0.05;
+    bottom: 20px;
+    left: 20px;
+    pointer-events: none;
+}
+
+.subscribe-content::after {
+    content: "🌍";
+    position: absolute;
+    font-size: 60px;
+    opacity: 0.05;
+    top: 20px;
+    right: 20px;
+    pointer-events: none;
+}
+
+.subscribe-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #5a597a;
+    line-height: 1.4;
+    margin-bottom: 50px;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    padding: 0 20px;
+    width: 380px;
+}
+
+.input-group i {
+    color: #FF7B3A;
+    font-size: 18px;
+    margin-right: 12px;
+}
+.input-group i {
+    color: #84807e;
+    font-size: 18px;
+    margin-right: 12px;
+}
+
+.email-input {
+    flex: 1;
+    padding: 18px 0;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
+}
+
+.email-input::placeholder {
+    color: #B8B9D0;
+    font-weight: 400;
+}
+
+.subscribe-btn {
+    background: #d87340;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(255, 123, 58, 0.3);
+}
+
+.subscribe-btn:hover {
+    background: #E55A2B;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(255, 123, 58, 0.4);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .subscribe-section {
+        padding: 50px 0 60px 0;
+    }
+    
+    .subscribe-content {
+        padding: 40px 25px;
+        border-radius: 40px;
+    }
+    
+    .subscribe-title {
+        font-size: 22px;
+        margin-bottom: 35px;
+    }
+    
+    .subscribe-title br {
+        display: none;
+    }
+    
+    .subscribe-form {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .input-group {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .email-input {
+        padding: 15px 0;
+    }
+    
+    .subscribe-btn {
+        width: 100%;
+        max-width: 350px;
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .subscribe-title {
+        font-size: 18px;
+    }
+    
+    .input-group {
+        padding: 0 15px;
+    }
+    
+    .input-group i {
+        font-size: 14px;
+    }
+    
+    .email-input {
+        font-size: 14px;
+    }
+    
+    .subscribe-btn {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+}
