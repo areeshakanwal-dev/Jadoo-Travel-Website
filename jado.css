@@ -1170,6 +1170,90 @@ h1 {
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(21, 20, 20, 0.3);
 }
+/* Mobile - Columns stack */
+@media (max-width: 850px) {
+    .testimonials-section {
+        padding: 40px 0;  /* DECREASED from 60px */
+    }
+    
+    .testimonials-wrapper {
+        flex-direction: column;
+        gap: 30px;  /* DECREASED from 40px */
+    }
+    
+    .testimonials-left,
+    .testimonials-right {
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .testimonials-heading {
+        font-size: 30px;  /* DECREASED from 36px */
+    }
+    
+    .right-quote-card {
+        padding: 20px 20px;  /* DECREASED from 25px */
+    }
+    
+    .right-quote-text {
+        font-size: 13px;  /* DECREASED from 14px */
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .testimonials-section {
+        padding: 30px 0;  /* DECREASED from 40px */
+    }
+    
+    .testimonials-heading {
+        font-size: 24px;  /* DECREASED from 28px */
+    }
+    
+    .testimonials-label {
+        font-size: 12px;  /* DECREASED from 13px */
+        letter-spacing: 1.5px;  /* DECREASED from 2px */
+    }
+    
+    .right-quote-card {
+        padding: 15px 15px;  /* DECREASED from 20px */
+        border-radius: 10px;  /* DECREASED from 12px */
+    }
+    
+    .quote-icon {
+        font-size: 28px;  /* DECREASED from 35px */
+    }
+    
+    .right-quote-text {
+        font-size: 12px;  /* DECREASED from 13px */
+        line-height: 1.5;  /* DECREASED from 1.6 */
+        margin-bottom: 15px;  /* DECREASED from 18px */
+    }
+    
+    .author-avatar {
+        width: 35px;  /* DECREASED from 40px */
+        height: 35px;  /* DECREASED from 40px */
+    }
+    
+    .author-info h4 {
+        font-size: 13px;  /* DECREASED from 14px */
+    }
+    
+    .author-info p {
+        font-size: 11px;  /* DECREASED from 12px */
+    }
+    
+    .airline-row {
+        gap: 12px;  /* DECREASED from 15px */
+        justify-content: center;
+    }
+    
+    .airline-name {
+        font-size: 11px;  /* DECREASED from 12px */
+        letter-spacing: 0.5px;
+    }
+}
 /* ============================================ */
 /* SUBSCRIBE SECTION - Newsletter               */
 /* ============================================ */
@@ -1359,5 +1443,233 @@ h1 {
     .subscribe-btn {
         font-size: 14px;
         padding: 12px 20px;
+    }
+}
+/*  ============================================ */ 
+/* FOOTER SECTION - Company, Contact, More      */
+/* ============================================ */
+
+.footer {
+    background: #FFFFFF;
+    padding: 70px 0 30px 0;
+    margin-top: 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+.vapp{
+    /* border: 1px solid #FF7B3A;   */
+    box-shadow: 0 4px 20px rgba(31, 31, 31, 0.25);
+    margin: 4px;
+    border-radius: 50%;
+}
+
+/* Footer Columns */
+.footer-column {
+    flex: 1;
+    min-width: 150px;
+}
+
+/* Brand Column - wider */
+.footer-brand {
+    flex: 1.5;
+    min-width: 220px;
+}
+
+.footer-logo {
+    font-size: 38px;
+    font-weight: 500;
+    background: linear-gradient(135deg, #1a1a18, #1a1818);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.footer-tagline {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #5E6282;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Footer Headings */
+.footer-heading {
+    font-size: 18px;
+    font-weight: 700;
+    color: #4d4c67;
+    margin-bottom: 25px;
+}
+
+/* Footer Links List */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #5E6282;
+    transition: color 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-links a:hover {
+    color: #FF7B3A;
+}
+
+/* App Store Buttons */
+.app-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.app-btn {
+    display: flex;
+    align-items: center;
+    gap: 2px;  
+    background: #1E1D4C;
+    color: white;
+    border: none;
+    border-radius: 16px;  
+    justify-content: center;
+    margin-left: 0px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;  
+    width: 10px;  
+    height: 50px;
+    min-width: 110px;  
+    white-space: nowrap;  /* Prevents text wrapping */
+}
+.app-btn:hover {
+    background: #FF7B3A;
+    transform: translateY(-3px);
+}
+
+.app-btn i {
+    font-size: 18px;
+}
+
+.app-btn span {
+    font-size: 9px;
+    text-align: left;
+    line-height: 1.3;
+}
+
+.app-btn span strong {
+    font-size: 12px;
+    display: block;
+}
+
+/* Footer Bottom Copyright */
+.footer-bottom {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: #5E6282;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+    .footer-container {
+        gap: 30px;
+    }
+    
+    .footer-column {
+        min-width: 140px;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer-container {
+        flex-wrap: wrap;
+    }
+    
+    .footer-brand {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .footer-tagline br {
+        display: none;
+    }
+    
+    .footer-column {
+        text-align: center;
+        min-width: 120px;
+    }
+    
+    .app-buttons {
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 50px 0 20px 0;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .footer-column {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .footer-logo {
+        font-size: 28px;
+    }
+    
+    .footer-tagline {
+        font-size: 13px;
+    }
+    
+    .footer-heading {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+    
+    .app-buttons {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .footer-bottom {
+        margin-top: 40px;
+        padding-top: 20px;
     }
 }
