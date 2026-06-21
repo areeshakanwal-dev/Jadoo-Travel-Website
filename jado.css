@@ -1537,24 +1537,24 @@ h1 {
 .app-buttons {
     display: flex;
     flex-direction: row;
-    gap: 12px;
+    gap: 2px;
 }
 .app-btn {
     display: flex;
     align-items: center;
-    gap: 2px;  
+    /* gap: 0;   */
     background: #1E1D4C;
     color: white;
     border: none;
     border-radius: 16px;  
     justify-content: center;
-    margin-left: 0px;
+    /* margin-left: 0px; */
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: 'Poppins', sans-serif;
     font-size: 12px;  
     width: 10px;  
-    height: 50px;
+    height: 45px;
     min-width: 110px;  
     white-space: nowrap;  /* Prevents text wrapping */
 }
