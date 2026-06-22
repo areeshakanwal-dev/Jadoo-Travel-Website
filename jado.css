@@ -1170,15 +1170,45 @@ h1 {
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(21, 20, 20, 0.3);
 }
-/* Mobile - Columns stack */
-@media (max-width: 850px) {
-    .testimonials-section {
-        padding: 40px 0;  /* DECREASED from 60px */
+/* ======================================== */
+/* RESPONSIVE DESIGN SYSTEM                 */
+/* ======================================== */
+@media screen and (max-width: 1024px) {
+    
+    /* Layout */
+    .testimonials-wrapper {
+        gap: 30px;
     }
     
+    /* Typography */
+    .testimonials-heading {
+        font-size: 32px;
+    }
+    
+    /* Logos */
+    .airline-row {
+        gap: 15px 30px;
+        max-width: 800px;
+        justify-content: center;
+    }
+    
+    .images-logo {
+        height: 28px;
+        max-width: 100px;
+        min-width: 35px;
+    }
+}
+@media screen and (max-width: 850px) {
+    
+    /* Section */
+    .testimonials-section {
+        padding: 40px 0;
+    }
+    
+    /* Layout - Stack columns */
     .testimonials-wrapper {
         flex-direction: column;
-        gap: 30px;  /* DECREASED from 40px */
+        gap: 30px;
     }
     
     .testimonials-left,
@@ -1188,70 +1218,164 @@ h1 {
         width: 100%;
     }
     
+    /* Typography */
     .testimonials-heading {
-        font-size: 30px;  /* DECREASED from 36px */
-    }
-    
-    .right-quote-card {
-        padding: 20px 20px;  /* DECREASED from 25px */
+        font-size: 30px;
     }
     
     .right-quote-text {
-        font-size: 13px;  /* DECREASED from 14px */
-    }
-}
-
-/* Small Mobile */
-@media (max-width: 480px) {
-    .testimonials-section {
-        padding: 30px 0;  /* DECREASED from 40px */
+        font-size: 13px;
     }
     
-    .testimonials-heading {
-        font-size: 24px;  /* DECREASED from 28px */
-    }
-    
-    .testimonials-label {
-        font-size: 12px;  /* DECREASED from 13px */
-        letter-spacing: 1.5px;  /* DECREASED from 2px */
-    }
-    
+    /* Cards */
     .right-quote-card {
-        padding: 15px 15px;  /* DECREASED from 20px */
-        border-radius: 10px;  /* DECREASED from 12px */
+        padding: 20px;
     }
     
-    .quote-icon {
-        font-size: 28px;  /* DECREASED from 35px */
-    }
-    
-    .right-quote-text {
-        font-size: 12px;  /* DECREASED from 13px */
-        line-height: 1.5;  /* DECREASED from 1.6 */
-        margin-bottom: 15px;  /* DECREASED from 18px */
-    }
-    
-    .author-avatar {
-        width: 35px;  /* DECREASED from 40px */
-        height: 35px;  /* DECREASED from 40px */
-    }
-    
-    .author-info h4 {
-        font-size: 13px;  /* DECREASED from 14px */
-    }
-    
-    .author-info p {
-        font-size: 11px;  /* DECREASED from 12px */
+    /* Logos */
+    .airlines-bottom {
+        margin: 30px auto 0;
     }
     
     .airline-row {
-        gap: 12px;  /* DECREASED from 15px */
-        justify-content: center;
+        gap: 15px 25px;
+        max-width: 600px;
     }
     
-    .airline-name {
-        font-size: 11px;  /* DECREASED from 12px */
-        letter-spacing: 0.5px;
+    .images-logo {
+        height: 26px;
+        max-width: 90px;
+        min-width: 30px;
+    }
+}
+@media screen and (max-width: 550px) {
+    
+    /* Typography */
+    .testimonials-heading {
+        font-size: 28px;
+    }
+    
+    .right-quote-text {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+    
+    /* Cards */
+    .right-quote-card {
+        padding: 18px 16px;
+        border-radius: 14px;
+    }
+    
+    .quote-icon {
+        font-size: 30px;
+    }
+    
+    /* Author */
+    .author-avatar {
+        width: 38px;
+        height: 38px;
+    }
+    
+    .author-info h4 {
+        font-size: 14px;
+    }
+    
+    .author-info p {
+        font-size: 12px;
+    }
+    
+    /* Logos */
+    .airline-row {
+        gap: 12px 20px;
+        max-width: 400px;
+        padding: 0 10px;
+    }
+    
+    .images-logo {
+        height: 22px;
+        max-width: 75px;
+        min-width: 25px;
+    }
+}
+@media screen and (max-width: 480px) {
+    
+    /* Section */
+    .testimonials-section {
+        padding: 30px 0;
+    }
+    
+    /* Typography */
+    .testimonials-heading {
+        font-size: 24px;
+    }
+    
+    .testimonials-label {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+    }
+    
+    .right-quote-text {
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+    
+    /* Cards */
+    .right-quote-card {
+        padding: 15px;
+        border-radius: 10px;
+    }
+    
+    .quote-icon {
+        font-size: 28px;
+    }
+    
+    /* Author */
+    .author-avatar {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .author-info h4 {
+        font-size: 13px;
+    }
+    
+    .author-info p {
+        font-size: 11px;
+    }
+    
+    /* Logos */
+    .airline-row {
+        gap: 12px;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 400px) {
+    
+    /* Logos */
+    .airline-row {
+        gap: 10px 15px;
+        max-width: 300px;
+    }
+    
+    .images-logo {
+        height: 18px;
+        max-width: 60px;
+        min-width: 20px;
+    }
+}
+@media screen and (max-width: 350px) {
+    
+    /* Logos */
+    .airline-row {
+        gap: 8px 12px;
+        max-width: 250px;
+    }
+    
+    .images-logo {
+        height: 16px;
+        max-width: 50px;
+        min-width: 18px;
     }
 }
 /* ============================================ */
